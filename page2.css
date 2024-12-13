@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.input-group {
+    margin: 20px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4; 
+    border: none; 
+    border-bottom: 1px solid #ccc; 
+    border-radius: 0; 
+    box-shadow: none; 
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ff6404;
+    color: #fff;
+    border: none; 
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: none;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #e55a00;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgb(181, 181, 181);
+    margin: 20px 0;
+}
+
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .text-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .text-container h1 {
+        font-size: 2em;
+    }
+
+    .text-container p {
+        font-size: 1em;
+    }
+
+    .logo {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .typing-animation {
+        font-size: 2em;
+    }
+
+    .loyalty-text {
+        font-size: 1.2em;
+    }
+
+    .phone-input select, .phone-input input {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 1em;
+    }
+}

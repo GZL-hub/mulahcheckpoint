@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Registration</h1>
+        <p><em>Please fill up your details</em></p>
+        <form id="registration-form">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <div id="name-error" class="error-message"></div>
+            </div>
+            <div class="input-group">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" required>
+                <div id="birthday-error" class="error-message"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <div id="email-error" class="error-message"></div>
+            </div>
+            <div class="input-group">
+                <label for="no-email">No email address:</label>
+                <input type="checkbox" id="no-email" name="no-email" onclick="toggleEmailInput()">
+            </div>
+            <button type="button" onclick="submitForm()">Continue</button>
+            <button type="button" onclick="goBack()">Back</button>
+            <hr>
+            <div class="footer-text">
+                powered by <a href="https://mulahpoints.com/">MulahRewards.com</a>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

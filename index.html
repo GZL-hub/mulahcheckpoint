@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="text-container">
+            <h1 class="typing-animation">Hello, Welcome!</h1>
+            <p class="loyalty-text">Check your loyalty points</p>
+        </div>
+        <form id="loyalty-form">
+            <div class="phone-input">
+                <select name="area-code" id="area-code">
+                    <option value="+60">+60</option>
+                    <option value="+62">+62</option>
+                </select>
+                <input type="text" name="mobile-number" id="mobile-number" placeholder="Enter your mobile number">
+            </div>
+            <button type="button" onclick="checkLoyaltyPoints()">Check your Loyalty Points</button>
+            <hr>
+            <div class="footer-text">
+                powered by <a href="https://mulahpoints.com/">MulahRewards.com</a>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
